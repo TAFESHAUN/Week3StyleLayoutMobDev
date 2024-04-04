@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week4.MainPage">
+
+    <Grid Padding="5" Margin="5" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="46*"/>
+        </Grid.ColumnDefinitions>
+        <!--Header-->
+        <Frame Padding="10" Margin="5" BorderColor="Crimson"  BackgroundColor="Beige"
+               ZIndex="1" ScaleY="0.90"
+               >
+            <Image Source="dotnet_bot.png"
+               Aspect="AspectFit"
+               Grid.Row="0" Grid.Column="0"
+               />
+        </Frame>
+        <BoxView Grid.ColumnSpan="3" Color="Coral" ZIndex="0" />
+        <Label Text="Header" FontAttributes="Bold" 
+               FontSize="Header" Grid.ColumnSpan="3"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               />
+
+        <!--Body-->
+        <!--Upper Body-->
+        <!--Box 1-->
+        <BoxView Color="Transparent" Grid.Row="1" Grid.Column="0"/>
+        <Button Text="Option 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="1"
+               Padding="5"
+               />
+        <!--Box 2-->
+        <BoxView Grid.Row="1" Grid.Column="1"
+                 Color="Transparent" />
+        <Label Grid.Column="1" Grid.Row="1"
+               Text="Content Box 2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <!--Box 3-->
+        <BoxView Grid.Row="1" Grid.Column="3"
+                 Color="Transparent" />
+        <Label Grid.Column="2" Grid.Row="1"
+               Text="Content Box 3"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        
+        <!--Lower Body-->
+        <!--Box 1-->
+        <BoxView Grid.Row="2"
+                 Color="Transparent" />
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               Text="Content Box 4"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <!--Box 2-->
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="Transparent" />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="Content Box 5"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <!--Box 3-->
+        <BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="CornflowerBlue" />
+        <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="Content Box 6"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <!--Footer-->
+        <BoxView Grid.Row="3"
+                 Grid.ColumnSpan="3"
+                 Color="Transparent" />
+        <Label Grid.Row="3"
+               Grid.ColumnSpan="3"
+               Text="Footer"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </Grid>
+
+</ContentPage>

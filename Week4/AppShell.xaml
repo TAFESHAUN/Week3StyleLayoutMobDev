@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Week4.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Week4"
+    Shell.FlyoutBehavior="Disabled"
+    >
+    <!--<ShellContent
+            Title="Main Page"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    <ShellContent
+          Title="New Page"
+          ContentTemplate="{DataTemplate local:NewPage}"
+          Route="NewPage" />
+    <ShellContent
+          Title="Other Page"
+          ContentTemplate="{DataTemplate local:OtherPage}"
+          Route="OtherPage" />
+    <ShellContent
+            Title="News Page"
+            ContentTemplate="{DataTemplate local:NewsPage}"
+            Route="NewsPage"/>-->
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="Select Page">
+            <ShellContent
+          ContentTemplate="{DataTemplate local:NewPage}"
+          Route="NewPage" />
+        </Tab>
+        <Tab Title="About Us">
+
+            <ShellContent
+          ContentTemplate="{DataTemplate local:OtherPage}"
+          Route="OtherPage" />
+        </Tab>
+        <Tab Title="Cool News Page">
+
+            <ShellContent 
+            ContentTemplate="{DataTemplate local:NewsPage}"
+            Route="NewsPage"
+            />
+        </Tab>
+    </TabBar>
+
+
+</Shell>
